@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+  <h1>vue 시작</h1>
+  <div id="start">
+    <input type="text" v-model:value="text">
+    <h1>{{text}}</h1>
+    <a :href='link1'>page move</a>
+    <img :src="src1" alt="mountain.png">
+  </div>
+
+  <script>
+    let app = new Vue({
+      el: '#start',
+      data () {
+        return {
+          text: ' good2',
+          link1: 'https://www.notion.so/clarkcau/Javascript-4fb9ef1b11ee485ea2e06298921ad67d#e54c97c004f944e183bd991776cf87fd',
+          src1: 'https://s3.us-west-2.amazonaws.com/secure.notion-static.com/fa10fe31-5c2f-4924-a600-a0b1af33f2ae/20210117_133634.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210121%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210121T143311Z&X-Amz-Expires=86400&X-Amz-Signature=6917d5f74d4c9f60eeb9b017f0c68733da6cefc8fae50cf35becb9b0cf68b211&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%2220210117_133634.jpg%22'
+        }
+      }
+    })
+  </script>
+  
+</body>
+</html>
