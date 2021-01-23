@@ -8,7 +8,9 @@
     <body>
 
         <div id="start">
-            <button type="button" name="button" v-on:click="test('t', $event)">인자전달</button>
+            <button type="button" name="button" v-on:click.left="test('t', $event)">L인자전달</button>
+            <button type="button" name="button" v-on:click.middle="test('t', $event)">M인자전달</button>
+            <button type="button" name="button" v-on:click.right="test('t', $event)">R인자전달</button>
         </div>
 
         <script type="text/javascript">

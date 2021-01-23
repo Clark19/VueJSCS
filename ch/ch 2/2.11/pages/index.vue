@@ -1,13 +1,13 @@
 <template>
     <div class="">
         <ul class='users'>
-            <li v-for="user in users">id: {{user.id}}, name: {{user.name}}, age: {{user.age}}</li>
+            <li v-for="user in users" :key="user.id">id: {{user.id}}, name: {{user.name}}, age: {{user.age}}</li>
         </ul>
 
         <div class="add">
-            <input type="text" name="" v-model:value="id">
-            <input type="text" name="" v-model:value="name">
-            <input type="text" name="" v-model:value="age">
+            <input type="text" name="" v-model="id">
+            <input type="text" name="" v-model="name">
+            <input type="text" name="" v-model="age">
             <button type="button" @click="userAdd">추가</button>
         </div>
     </div>
